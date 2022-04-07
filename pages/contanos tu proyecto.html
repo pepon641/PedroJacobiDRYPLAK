@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="construccion en seco DRYPLAK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../images/LOGO1.gif" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Questrial&family=Volkhov&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/dcad10dae5.js" crossorigin="anonymous"></script>
+    <title>DRYPLAK©</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="barra">
+                <div class="barra__menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <li><a class="barra__nav" href="../index.html"> Home</a></li>
+                <li><a class="barra__nav" href="./trabajos realizados.html"> Trabajos realizados</a></li>
+                <li><a class="barra__nav" href="./quienes somos.html">Quienes somos</a></li>
+                <li><a class="barra__nav" href="./faqs.html"> Faqs</a></li>
+                <img class="barra__logo" src="../images/LOGO1.gif" alt="logo">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="formu">
+            <h1 class="secpri__titsup">Queremos ser parte de tu proyecto...</h1>
+            <fieldset class="form">
+                <img class="imgcelu" src="../images/celu.jpg" alt="escribinos">
+                <legend class="form__titulo">Formulario de contacto</legend>
+                <form action="datos.php" method="post">
+                <p>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" placeholder="ingresa tu nombre" required>
+                </p>
+                <p>
+                    <label for="archivo">Proyecto:</label>
+                    <input type="file" name="archivo" placeholder="Archivo de proyecto">
+                </p>
+                <p>
+                    <label for="email"> Email:</label>
+                    <input type="email" name="email" placeholder="ingresa tu email" required>
+                </p>
+                <p>
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" name="telefono" placeholder="ingresa tu telefono">
+                </p>
+                
+                <h4>Motivo</h4>
+                <select name="motivo:">
+                    <option value="presupuesto">Presupuesto</option>
+                    <option value="verificaciones">Verificaciones</option>
+                    <option value="reparación">Reparaciones</option>
+                </select><br><br>
+                <div class="form__input">
+                <h4>Contános tu proyecto</h4>
+                <textarea class="" name="comentario" cols="40" rows="10"></textarea><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar Formulario">
+                <input type="button" value="Sin acciones">
+                </div>
+                </form>
+            </fieldset> 
+            <h1 class="secpri__titsec">...somos DRYPLAK©</h1>
+        </section>
+    </main>
+    <footer class="foott">
+        <h6 class="foot__text">Todos los derechos reservados 2022 - Argentina.</h6>
+        <div class="foot__log">
+        <a href="../pages/contanos tu proyecto.html"><img class="foot__img" src="../images/mail.png" alt="mail"></a>
+        <img class="foot__img" src="../images/insta.png" alt="insta">
+        <img class="foot__img" src="../images/facebook-icone-gris.png" alt="facebook">
+        <img class="foot__img" src="../images/twit.png" alt="twitter">
+    </div>
+    </footer>
+</body>
+</html>
