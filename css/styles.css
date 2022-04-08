@@ -29,6 +29,15 @@ html{
     grid-row: 1 / 3;
     padding-top: 10px; 
     align-self: start;
+    animation-name: gira;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+@keyframes gira{
+    50%{
+        transform: translateX(-450px);
+    }
 }
 .barra__nav{
     grid-column: 1 / 7;
@@ -47,6 +56,7 @@ html{
 main{
     background-color: rgb(163, 180, 175);
     padding-top: 180px;
+    background-image: linear-gradient(to bottom, rgb(94, 113, 146), rgb(163, 180, 175));
 }
 .secpri {
     display: grid;
@@ -63,7 +73,6 @@ main{
     padding: 10px;
     align-self: center;
     margin: 0px 30px 50px 30px;
-    animation: animate__lightSpeedInLeft
     
 }
 
@@ -98,6 +107,7 @@ main{
     margin: 30px;
     margin-top: 50px;
     padding-top: 50px;
+    
 }
 /*fabricantes*/
 .pie{
@@ -110,6 +120,9 @@ main{
     grid-column: 1 / 11;
     font-size: 25px;
     margin-left: 30px;
+    animation-name: zoomIn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .pie__logos{
     grid-row: 2;
