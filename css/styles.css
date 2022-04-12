@@ -22,7 +22,7 @@ html{
 /*main*/
 main{
     background-color: rgb(163, 180, 175);
-    padding-top: 180px;
+    padding-top: 80px;
 }
 .secpri {
     display: grid;
@@ -41,14 +41,17 @@ main{
     margin: 0px 30px 50px 30px;
     
 }
-
-.img-fluid{
-    max-width: 100%;
-    height: auto;
-    padding: 0 40px 0 40px;
-    grid-row: 2;
-    grid-column: 1 / 11;
+#carouselExampleSlidesOnly{
+    display: inline-block;
+    justify-self: center;
+    max-width: 60%;
 }
+#carouselExampleSlidesOnly img{
+    display: inline-block;
+    width: 600px;
+    height: auto;
+}
+
 .secpri__titsec{
     grid-row: 3;
     grid-column: 1 / 11;
@@ -200,39 +203,46 @@ main{
     align-self: center;
 }
 /*CONTANOS TU PROYECTO*/
-.form{
-    font-size: 2.5rem;
-    font-family: 'Questrial', sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    margin: 10mm;
-    padding: 5mm;
+.form-label{
+    font-size: 18px;
+    margin-left: 50px;
 }
-.form__titulo{
-    font-size: 3rem;
+#exampleFormControlInput1{
+    font-size: 15px;
+    width: 500px;
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
-label{
-    display: inline-block;
-    width: 120px;
-    height: 50px;
+.form-select{
+    font-size: 15px !important;
+    width: 500px !important;
+    height: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 50px !important;
 }
-p input{
-    text-align: center;
-    font-size: 1.5rem;
+#exampleFormControlTextarea1{
+    margin-left: 50px;
+    width: 500px;
 }
-select{
-    font-size: 1.5rem;
+#inputGroupFile02{
+    flex-grow: 0;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 450px !important;
+    font-size: 15px;
 }
-input{
-    font-size: 1.5rem;
+.input-group-text{
+    font-size: 15px !important;
+    margin-top: 30px;
 }
-.imgcelu{
-    width: 35%;
-    float: right;
-    border: solid 1px grey;
-    border-radius: 20px;
+.btn.btn-primary{
+    font-size: 15px;
+    margin-top: 30px;
 }
-
+.boton{
+    margin-left: 50px;
+}
 /*FAQS*/
 .faqs{
     display: grid;
