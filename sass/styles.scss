@@ -227,7 +227,8 @@ background-color: rgb(163, 180, 175);
 grid-template-columns: repeat(3, 1fr) 250px;
 grid-template-rows: repeat(4, auto);
 padding-bottom: 30px;
-padding-top: 60px;
+padding-top: 20px;
+padding-right: 20px;
 }
 
 .secpri__titsectra {
@@ -291,8 +292,8 @@ justify-content: end;
 .faqs {
 display: grid;
 grid-template-columns: repeat(10, 1fr);
-grid-template-rows: 60px 30px 100px 30px 100px 30px 90px 30px 120px 30px 120px 30px 100px 100px;
-padding-bottom: 100px;
+grid-template-rows: 60px 30px auto 30px auto 30px auto 30px auto 30px auto 30px auto 100px;
+padding-bottom: 20px;
 padding-top: 19px;
 }
 
@@ -332,7 +333,8 @@ background-color: $colorfondo;
 grid-template-columns: repeat(3, 1fr) 250px;
 grid-template-rows: repeat(4, auto);
 padding-bottom: 30px;
-padding-top: 60px;
+padding-top: 20px;
+padding-right: 20px;
 }
 
 /*QUIENES SOMOS*/
@@ -410,7 +412,7 @@ font-size: 13px;
 
 .secpri__titsec {
     font-size: 15px;
-    margin: 17px 10px 13px 10px;
+    margin: 17px 10px 0px 10px;
 }
 
 .secpri__titinf {
@@ -525,6 +527,7 @@ font-size: 15px;
 /*FAQS*/
 .faqs {
     padding-top: 20px;
+    padding-bottom: 20px;
     grid-template-rows: 60px auto;
     row-gap: 5px;
 }
@@ -543,8 +546,8 @@ font-size: 15px;
 }
 
 /*TRABAJOS REALIZADOS**/
-.trabre {
-    padding-top: 80px;
+.trabre{
+    padding-top: 20px;
 }
 
 .works {
@@ -554,7 +557,9 @@ font-size: 15px;
 .trabajos {
     grid-template-columns: auto;
 }
-
+.trabajos p{
+    font-size: 17px;
+}
 .secpri__titsectra {
     font-size: 15px;
 }
@@ -689,6 +694,7 @@ main {
     grid-row: 20px 15px;
     grid-template-columns: auto;
     grid-template-rows: auto;
+    padding-top: 20px;
 }
 .quien__img{
     width: 350px;
@@ -728,6 +734,7 @@ main {
     grid-template-rows: 60px repeat(12, auto);
     row-gap: 10px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .faqs h1 {
