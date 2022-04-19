@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Questrial&family=Volkhov&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@1,200&family=Questrial&family=Volkhov&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -134,12 +135,11 @@ main {
   padding-bottom: 50px;
   padding-top: 30px;
 }
-
 .pie__sub h4 {
   font-size: 25px;
 }
-
 .pie__sub p {
+  font-family: "Kanit", sans-serif;
   font-size: 20px;
   margin-right: 30px;
 }
@@ -192,6 +192,13 @@ main {
   align-items: center;
   row-gap: 20px;
 }
+.trabajos p {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
 .works {
   background-color: rgb(255, 238, 0);
@@ -210,14 +217,6 @@ main {
   border-radius: 20px;
   grid-row: 1/4;
   grid-column: 1/4;
-}
-
-.trabajos p {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-top: 20px;
-  font-weight: bold;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .foott {
@@ -284,13 +283,11 @@ main {
   display: flex;
   justify-content: end;
 }
-
 .botones input {
   font-size: 15px;
   margin-left: 20px;
   opacity: 0.5;
 }
-
 .botones input:hover {
   opacity: 1;
   border-radius: 10px;
@@ -305,7 +302,6 @@ main {
   padding-bottom: 20px;
   padding-top: 19px;
 }
-
 .faqs h1 {
   grid-column: 1/11;
   background-color: rgb(255, 238, 0);
@@ -327,6 +323,7 @@ main {
 .faqs__answer {
   text-align: justify;
   font-size: 2rem;
+  font-family: "Kanit", sans-serif;
   padding-left: 40px;
   padding-right: 40px;
   grid-column: 1/11;
@@ -354,6 +351,12 @@ main {
 .quien {
   display: inline-block;
 }
+.quien p {
+  text-align: justify;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
 .secpri__titsecquie {
   grid-row: 3;
@@ -366,13 +369,6 @@ main {
   margin: 30px 30px 0px 30px;
   text-align: right;
   align-self: center;
-}
-
-.quien p {
-  text-align: justify;
-  font-size: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .quien__img {
