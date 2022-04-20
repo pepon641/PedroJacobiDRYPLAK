@@ -1,184 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Questrial&family=Volkhov&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@1,200&family=Questrial&family=Volkhov&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-/*HOME/*
-/*header*/
-#navbarNav {
-  font-size: 15px;
-  justify-content: end;
-  font-family: "Volkhov", serif;
-}
-
-.nav-item :hover {
-  color: #11d8df !important;
-}
-
-.nav-item {
-  padding: 0 20px 0 20px;
-}
-
-.navbar-brand {
-  font-size: 25px !important;
-  font-family: "Volkhov", serif;
-  margin-left: 20px;
-}
-
-/*main*/
-main {
-  background-color: rgb(163, 180, 175);
-}
-
-.secpri {
-  display: grid;
-  grid-template-columns: auto repeat(8, 1fr) auto;
-  grid-template-rows: 60px auto 60px 100px;
-  padding-bottom: 100px;
-  padding-top: 40px;
-}
-
-.secpri__titsup {
-  grid-column: 1/11;
-  background-color: rgb(255, 238, 0);
-  font-family: "Volkhov", serif;
-  font-size: 35px;
-  color: rgb(51, 51, 95);
-  padding: 10px;
-  align-self: center;
-  margin: 0px 30px 50px 30px;
-}
-
-#carouselExampleSlidesOnly {
-  display: inline-block;
-  grid-column: 3/9;
-  width: auto;
-}
-
-#carouselExampleSlidesOnly img {
-  display: inline-block;
-  width: 600px;
-  height: auto;
-}
-
-.secpri__titsec {
-  grid-row: 3;
-  grid-column: 1/11;
-  background-color: rgb(255, 238, 0);
-  font-family: "Volkhov", serif;
-  font-size: 35px;
-  color: rgb(51, 51, 95);
-  padding: 10px;
-  margin: 30px 30px 0px 30px;
-  text-align: right;
-  align-self: center;
-}
-
-.secpri__titinf {
-  grid-row: 4;
-  grid-column: 1/11;
-  font-size: 30px;
-  align-self: center;
-  text-align: center;
-  margin: 30px;
-  margin-top: 50px;
-  padding-top: 50px;
-}
-
-.ahorra:hover {
-  font-size: 45px;
-  color: red;
-}
-
-/*fabricantes*/
-.pie {
+/*FAQS*/
+.faqs {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: auto auto auto;
-  background-color: rgb(163, 180, 175);
+  grid-template-rows: 60px 50px auto 50px auto 50px auto 50px auto 50px auto 50px auto 100px;
+  padding-bottom: 20px;
+  padding-top: 19px;
 }
-
-.pie__titulo {
+.faqs h1 {
   grid-column: 1/11;
-  font-size: 30px;
-  text-align: center;
-  animation-name: zoomIn;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  background-color: rgb(255, 238, 0);
+  font-family: "Volkhov", serif;
+  font-size: 35px;
+  color: rgb(51, 51, 95);
+  padding: 10px;
+  align-self: center;
+  margin: 35px 30px 50px 30px;
 }
-
-.pie__logos {
-  grid-row: 2;
-  grid-column: 1/11;
-  display: flex;
-  justify-content: space-around;
-  border: 5px;
-  border-style: groove;
-  border-radius: 20px;
-  border-color: rgb(100, 94, 94);
-  margin: 10px 30px;
-  padding: 5px;
-  padding-bottom: 2px;
-}
-
-.pie__sub {
-  grid-row: 3;
-  grid-column: 1/11;
-  margin-left: 30px;
-  padding-bottom: 50px;
-  padding-top: 30px;
-}
-.pie__sub h4 {
+.faqs__question {
+  text-align: left;
+  padding-left: 50px;
+  grid-column: 1/10;
   font-size: 25px;
+  padding-top: 15px;
 }
-.pie__sub p {
+.faqs__answer {
+  text-align: justify;
+  font-size: 2rem;
   font-family: "Kanit", sans-serif;
-  font-size: 20px;
-  margin-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  grid-column: 1/11;
 }
 
-/*footer*/
-.foot {
+#faqstitsec {
+  text-align: right;
+}
+
+.footq {
   display: grid;
   background-color: rgb(163, 180, 175);
   grid-template-columns: repeat(3, 1fr) 250px;
   grid-template-rows: repeat(4, auto);
   padding-bottom: 30px;
+  padding-top: 20px;
   padding-right: 20px;
 }
 
-.foot__img {
-  width: 40px;
-  height: 40px;
+/*MEDIAQUERIES*/
+@media screen and (max-width: 576px) {
+  .faqs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-rows: 60px auto;
+    row-gap: 5px;
+  }
+  .faqs h1 {
+    font-size: 15px;
+    margin: 0 10px 0 10px;
+  }
+  .faqs__question {
+    font-size: 15px;
+  }
+  .faqs__answer {
+    font-size: 14px;
+  }
 }
-
-.foot__img:hover {
-  width: 60px;
-  height: 60px;
+@media only screen and (min-width: 577px) and (max-width: 900px) {
+  .faqs {
+    grid-template-rows: 60px repeat(12, auto);
+    row-gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .faqs h1 {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+  .faqs__question {
+    font-size: 22px;
+  }
+  .faqs__answer {
+    font-size: 20px;
+  }
 }
-
-.foot__text {
-  grid-column: 1/4;
-  font-size: 20px;
-  margin-left: 30px;
-  text-align: left;
-  margin-top: 10px;
-}
-
-.foot__log {
-  display: flex;
-  justify-content: space-around;
-  grid-column: 4;
-  align-content: center;
-}
-
 /*TRABAJOS REALIZADOS*/
 .trabre {
   padding-top: 17px;
@@ -199,6 +106,13 @@ main {
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.trabajos div img {
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  grid-row: 1/4;
+  grid-column: 1/4;
+}
 
 .works {
   background-color: rgb(255, 238, 0);
@@ -208,15 +122,7 @@ main {
   padding: 10px;
   align-self: center;
   justify-self: flex-start;
-  margin: 0px 30px 30px 30px;
-}
-
-.trabajos div img {
-  width: 280px;
-  height: 280px;
-  border-radius: 20px;
-  grid-row: 1/4;
-  grid-column: 1/4;
+  margin: 0px 30px 20px 30px;
 }
 
 .foott {
@@ -242,6 +148,137 @@ main {
   align-self: center;
 }
 
+/*MEDIAQUERIES*/
+@media screen and (max-width: 576px) {
+  .imgcelu {
+    display: none;
+  }
+
+  .container-fluid {
+    padding-top: 20px;
+  }
+
+  .trabajos div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 900px) {
+  .trabre {
+    padding-top: 20px;
+  }
+
+  .trabajos {
+    padding-top: 10px;
+  }
+  .trabajos div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+  }
+
+  .works {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+
+  .secpri__titsectra {
+    font-size: 20px;
+  }
+
+  .foott {
+    padding-bottom: 280px;
+  }
+}
+/*QUIENES SOMOS*/
+.quienessomos {
+  padding-top: 16px;
+}
+
+.quien {
+  display: inline-block;
+}
+.quien p {
+  font-family: "Kanit", sans-serif;
+  text-align: justify;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.quien__img {
+  width: 500px;
+  float: inline-end;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.secpri__titsecquie {
+  grid-row: 3;
+  grid-column: 1/11;
+  background-color: rgb(255, 238, 0);
+  font-family: "Volkhov", serif;
+  font-size: 35px;
+  color: rgb(51, 51, 95);
+  padding: 10px;
+  margin: 30px 30px 0px 30px;
+  text-align: right;
+  align-self: center;
+}
+
+/*MEDIAQUERIES*/
+@media screen and (max-width: 576px) {
+  .quienessomos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .quienessomos p {
+    font-size: 15px;
+  }
+
+  .secpri {
+    grid-template-rows: 60px auto auto 60px;
+  }
+  .secpri__titsecquie {
+    font-size: 15px;
+    margin: 17px 10px;
+    grid-row: 4;
+  }
+
+  .footq {
+    grid-template-rows: 20px 30px;
+    grid-template-columns: auto;
+    padding-top: 0;
+  }
+
+  .quien__img {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 900px) {
+  .quienessomos {
+    padding-top: 20px;
+  }
+
+  .secpri__titsecquie {
+    font-size: 20px;
+    margin-top: 17px;
+    margin-bottom: 0;
+  }
+
+  .footq {
+    grid-row: 20px 15px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding-top: 20px;
+  }
+
+  .quien__img {
+    width: 350px;
+  }
+}
 /*CONTANOS TU PROYECTO*/
 .contanos {
   padding-top: 17px;
@@ -294,15 +331,92 @@ main {
   font-size: 18px;
 }
 
-/*FAQS*/
-.faqs {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 60px 30px auto 30px auto 30px auto 30px auto 30px auto 30px auto 100px;
-  padding-bottom: 20px;
-  padding-top: 19px;
+/*MEDIAQUERIES*/
+@media screen and (max-width: 576px) {
+  .trabre {
+    padding-top: 20px;
+  }
+
+  #imgcelu {
+    display: none;
+  }
+
+  .works {
+    font-size: 15px;
+  }
+
+  .trabajos {
+    grid-template-columns: auto;
+  }
+  .trabajos p {
+    font-size: 17px;
+  }
+
+  .secpri__titsectra {
+    font-size: 15px;
+  }
 }
-.faqs h1 {
+@media only screen and (min-width: 577px) and (max-width: 900px) {
+  #imgcelu {
+    width: 150px;
+    padding-top: 0px;
+  }
+
+  .container-fluid {
+    padding-top: 30px;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+  #imgcelu {
+    width: 250px;
+    padding-top: 30px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*HOME/*
+/*header*/
+#navbarNav {
+  font-size: 15px;
+  justify-content: end;
+  font-family: "Volkhov", serif;
+}
+
+.nav-item :hover {
+  color: #11d8df !important;
+}
+
+.nav-item {
+  padding: 0 20px 0 20px;
+}
+
+.navbar-brand {
+  font-size: 25px !important;
+  font-family: "Volkhov", serif;
+  margin-left: 20px;
+}
+
+/*main*/
+main {
+  background-color: rgb(163, 180, 175);
+}
+
+.secpri {
+  display: grid;
+  grid-template-columns: auto repeat(8, 1fr) auto;
+  grid-template-rows: 60px auto 60px 100px;
+  padding-bottom: 100px;
+  padding-top: 40px;
+}
+.secpri__titsup {
   grid-column: 1/11;
   background-color: rgb(255, 238, 0);
   font-family: "Volkhov", serif;
@@ -310,55 +424,9 @@ main {
   color: rgb(51, 51, 95);
   padding: 10px;
   align-self: center;
-  margin: 35px 30px 50px 30px;
+  margin: 0px 30px 20px 30px;
 }
-
-.faqs__question {
-  text-align: left;
-  padding-left: 50px;
-  grid-column: 1/10;
-  font-size: 25px;
-}
-
-.faqs__answer {
-  text-align: justify;
-  font-size: 2rem;
-  font-family: "Kanit", sans-serif;
-  padding-left: 40px;
-  padding-right: 40px;
-  grid-column: 1/11;
-}
-
-#faqstitsec {
-  text-align: right;
-}
-
-.footq {
-  display: grid;
-  background-color: rgb(163, 180, 175);
-  grid-template-columns: repeat(3, 1fr) 250px;
-  grid-template-rows: repeat(4, auto);
-  padding-bottom: 30px;
-  padding-top: 20px;
-  padding-right: 20px;
-}
-
-/*QUIENES SOMOS*/
-.quienessomos {
-  padding-top: 16px;
-}
-
-.quien {
-  display: inline-block;
-}
-.quien p {
-  text-align: justify;
-  font-size: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.secpri__titsecquie {
+.secpri__titsec {
   grid-row: 3;
   grid-column: 1/11;
   background-color: rgb(255, 238, 0);
@@ -370,13 +438,106 @@ main {
   text-align: right;
   align-self: center;
 }
+.secpri__titinf {
+  grid-row: 4;
+  grid-column: 1/11;
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+  margin: 30px;
+  margin-top: 50px;
+  padding-top: 50px;
+}
 
-.quien__img {
-  width: 500px;
-  float: inline-end;
-  margin-right: 30px;
+#carouselExampleSlidesOnly {
+  display: inline-block;
+  grid-column: 3/9;
+  width: auto;
+}
+#carouselExampleSlidesOnly img {
+  display: inline-block;
+  width: 600px;
+  height: auto;
+}
+
+.ahorra:hover {
+  font-size: 45px;
+  color: red;
+}
+
+/*fabricantes*/
+.pie {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto auto auto;
+  background-color: rgb(163, 180, 175);
+}
+.pie__titulo {
+  grid-column: 1/11;
+  font-size: 30px;
+  text-align: center;
+  animation-name: zoomIn;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.pie__logos {
+  grid-row: 2;
+  grid-column: 1/11;
+  display: flex;
+  justify-content: space-around;
+  border: 5px;
+  border-style: groove;
+  border-radius: 20px;
+  border-color: rgb(100, 94, 94);
+  margin: 10px 30px;
+  padding: 5px;
+  padding-bottom: 2px;
+}
+.pie__sub {
+  grid-row: 3;
+  grid-column: 1/11;
   margin-left: 30px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+.pie__sub h4 {
+  font-size: 25px;
+}
+.pie__sub p {
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  margin-right: 30px;
+}
+
+/*footer*/
+.foot {
+  display: grid;
+  background-color: rgb(163, 180, 175);
+  grid-template-columns: repeat(3, 1fr) 250px;
+  grid-template-rows: repeat(4, auto);
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+.foot__img {
+  width: 40px;
+  height: 40px;
+}
+.foot__img:hover {
+  width: 60px;
+  height: 60px;
+}
+.foot__text {
+  grid-column: 1/4;
+  font-size: 20px;
+  margin-left: 30px;
+  text-align: left;
   margin-top: 10px;
+}
+.foot__log {
+  display: flex;
+  justify-content: space-around;
+  grid-column: 4;
+  align-content: center;
 }
 
 /*MEDIAQUERIES*/
@@ -400,10 +561,22 @@ main {
     height: auto;
     padding-bottom: 40px;
   }
-
   .secpri__titsup {
     font-size: 15px;
     margin: 0 10px;
+  }
+  .secpri__imghome {
+    margin: 0;
+  }
+  .secpri__titsec {
+    font-size: 15px;
+    margin: 17px 10px 0px 10px;
+  }
+  .secpri__titinf {
+    font-size: 15px;
+    padding-top: 0px;
+    margin: 40px 10px 0 10px;
+    text-align: center;
   }
 
   .ahorra:hover {
@@ -411,35 +584,17 @@ main {
     color: red;
   }
 
-  .secpri__imghome {
-    margin: 0;
-  }
-
-  .secpri__titsec {
-    font-size: 15px;
-    margin: 17px 10px 0px 10px;
-  }
-
-  .secpri__titinf {
-    font-size: 15px;
-    padding-top: 0px;
-    margin: 0 10px;
-    text-align: center;
-  }
-
   /*FABRICANTES*/
   .pie {
     margin-top: 0;
     grid-template-rows: auto 200px auto;
   }
-
   .pie__titulo {
     margin-bottom: 15px;
     font-size: 17px;
     text-align: center;
-    margin: 0 10px 15px 10px;
+    margin: 0px 10px 15px 10px;
   }
-
   .pie__logos {
     display: grid;
     border: none;
@@ -448,19 +603,16 @@ main {
     grid-row: 2/3;
     grid-column: 4/8;
   }
-
   .pie img {
     width: 100px;
     height: 40px;
   }
-
   .pie__sub h4 {
     font-size: 15px;
     text-align: left;
     margin-right: 10px;
     margin-right: 10px;
   }
-
   .pie__sub p {
     font-size: 13px;
   }
@@ -471,17 +623,14 @@ main {
     grid-template-columns: auto;
     padding-top: 0;
   }
-
   .foot__img {
     width: 25px;
     height: 25px;
   }
-
   .foot__img:hover {
     width: 40px;
     height: 40px;
   }
-
   .foot__text {
     font-size: 10px;
     grid-column: 1/5;
@@ -491,93 +640,11 @@ main {
     margin: 0;
     margin-top: 25px;
   }
-
   .foot__log {
     grid-row: 1/2;
     grid-column: 1/5;
     margin-left: 70px;
     margin-right: 70px;
-  }
-
-  /* QUIENES SOMOS*/
-  .quienessomos {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .secpri {
-    grid-template-rows: 60px auto auto 60px;
-  }
-
-  .quienessomos p {
-    font-size: 15px;
-  }
-
-  .secpri__titsecquie {
-    font-size: 15px;
-    margin: 17px 10px;
-    grid-row: 4;
-  }
-
-  .footq {
-    grid-template-rows: 20px 30px;
-    grid-template-columns: auto;
-    padding-top: 0;
-  }
-
-  .quien__img {
-    width: 250px;
-  }
-
-  /*FAQS*/
-  .faqs {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    grid-template-rows: 60px auto;
-    row-gap: 5px;
-  }
-
-  .faqs h1 {
-    font-size: 15px;
-    margin: 0 10px 0 10px;
-  }
-
-  .faqs__question {
-    font-size: 15px;
-  }
-
-  .faqs__answer {
-    font-size: 14px;
-  }
-
-  /*TRABAJOS REALIZADOS**/
-  .trabre {
-    padding-top: 20px;
-  }
-
-  .works {
-    font-size: 15px;
-  }
-
-  .trabajos {
-    grid-template-columns: auto;
-  }
-
-  .trabajos p {
-    font-size: 17px;
-  }
-
-  .secpri__titsectra {
-    font-size: 15px;
-  }
-
-  /*CONTANOS TU PROYECTO*/
-  .imgcelu {
-    display: none;
-  }
-
-  .container-fluid {
-    padding-top: 20px;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 900px) {
@@ -592,15 +659,28 @@ main {
   }
 
   .secpri {
-    padding-top: 60px;
+    padding-top: 20px;
     grid-template-rows: 60px auto 60px auto;
     height: auto;
     padding-bottom: 40px;
   }
-
   .secpri__titsup {
     font-size: 20px;
     margin-top: 0px;
+    margin-bottom: 0;
+  }
+  .secpri__imghome {
+    margin: 0;
+  }
+  .secpri__titsec {
+    font-size: 20px;
+    margin-top: 17px;
+    margin-bottom: 0px;
+  }
+  .secpri__titinf {
+    font-size: 15px;
+    padding-top: 15px;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
@@ -609,52 +689,30 @@ main {
     color: red;
   }
 
-  .secpri__imghome {
-    margin: 0;
-  }
-
-  .secpri__titsec {
-    font-size: 20px;
-    margin-top: 17px;
-    margin-bottom: 0px;
-  }
-
-  .secpri__titinf {
-    font-size: 15px;
-    padding-top: 15px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   /*fabricantes*/
   .pie {
     margin-top: 0;
     grid-template-rows: auto auto auto;
   }
-
   .pie__titulo {
     margin-bottom: 15px;
     font-size: 17px;
     text-align: center;
     margin-right: 30px;
   }
-
   .pie__logos {
     display: flex;
     border: none;
     margin: 0, 30px;
     padding: 0;
   }
-
   .pie img {
     width: 100px;
     height: 40px;
   }
-
   .pie__sub h4 {
     font-size: 17px;
   }
-
   .pie__sub p {
     font-size: 15px;
   }
@@ -665,114 +723,21 @@ main {
     grid-template-columns: auto;
     grid-template-rows: auto 40px;
   }
-
   .foot__img {
     width: 20px;
     height: 20px;
   }
-
   .foot__img:hover {
     width: 40px;
     height: 40px;
   }
-
   .foot__text {
     font-size: 14px;
     grid-row: 1/2;
     line-height: 0px;
   }
-
   .foot__log {
     grid-row: 1/2;
-  }
-
-  /*QUIENES SOMOS*/
-  .quienessomos {
-    padding-top: 20px;
-  }
-
-  .secpri__titsecquie {
-    font-size: 20px;
-    margin-top: 17px;
-    margin-bottom: 0;
-  }
-
-  .footq {
-    grid-row: 20px 15px;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    padding-top: 20px;
-  }
-
-  .quien__img {
-    width: 350px;
-  }
-
-  /*TRABAJOS REALIZADOS*/
-  .trabre {
-    padding-top: 20px;
-  }
-
-  .trabajos {
-    padding-top: 10px;
-  }
-
-  .works {
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0;
-  }
-
-  .trabajos div img {
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
-  }
-
-  .secpri__titsectra {
-    font-size: 20px;
-  }
-
-  .foott {
-    padding-bottom: 280px;
-  }
-
-  /*FAQS*/
-  .faqs {
-    grid-template-rows: 60px repeat(12, auto);
-    row-gap: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .faqs h1 {
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0;
-  }
-
-  .faqs__question {
-    font-size: 22px;
-  }
-
-  .faqs__answer {
-    font-size: 20px;
-  }
-
-  /*CONTANOS TU PROYECTO*/
-  #imgcelu {
-    width: 150px;
-    padding-top: 0px;
-  }
-
-  .container-fluid {
-    padding-top: 30px;
-  }
-}
-@media only screen and (min-width: 901px) and (max-width: 1100px) {
-  #imgcelu {
-    width: 250px;
-    padding-top: 30px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
