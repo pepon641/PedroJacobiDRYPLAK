@@ -8,7 +8,7 @@ display: inline-block;
     p{
         font-family: $tipo2;
         text-align: justify;
-        font-size: 20px;
+        font-size: map-get($map: $comun, $key:size );
         margin-left: 30px;
         margin-right: 30px;
     }
@@ -37,6 +37,35 @@ display: inline-block;
 
 /*MEDIAQUERIES*/
 @media screen and (max-width: 576px){
+.quienessomos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    p {
+        font-size: 15px;
+    }
+}
+
+.secpri {
+    grid-template-rows: 60px auto auto 60px;
+    &__titsecquie {
+        font-size: 15px;
+        margin: 17px 10px;
+        grid-row: 4;
+    }
+}
+
+.footq {
+    grid-template-rows: 20px 30px;
+    grid-template-columns: auto;
+    padding-top: 0;
+}
+
+.quien__img{
+    width: 150px;
+}
+}
+
+@media only screen and (min-width: 386px) and (max-width: 576px){
 .quienessomos {
     padding-top: 20px;
     padding-bottom: 20px;

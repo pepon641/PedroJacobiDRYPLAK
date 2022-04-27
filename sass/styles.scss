@@ -50,13 +50,7 @@ main {
     padding-top: 40px;
     &__titsup {
         grid-column: 1/11;
-        background-color: $colorfondo-tit;
-        font-family: $tipo-nav;
-        font-size: $fontsizeh1;
-        color: $letratitulo;
-        padding: 10px;
-        align-self: center;
-        margin: 0px 30px 20px 30px;
+        @extend .works;
     }
     &__titsec {
         grid-row: 3;
@@ -95,7 +89,7 @@ main {
 
 .ahorra:hover {
     font-size: 45px;
-    color: red;
+    color: map-get($map: $comun, $key: color)
 }
 
 /*fabricantes*/
@@ -118,12 +112,13 @@ main {
         display: flex;
         justify-content: space-around;
         border: 5px;
-        border-style: groove;
-        border-radius: 20px;
-        border-color: rgb(100, 94, 94);
+        @include border (groove, 20px, rgb(100,94,94));
         margin: 10px 30px;
         padding: 5px;
         padding-bottom: 2px;
+    }
+    &__logos :hover{
+        opacity: 0.7;
     }
     &__sub {
         grid-row: 3;
@@ -136,7 +131,7 @@ main {
         }
         p {
             font-family: $tipo2;
-            font-size: 20px;
+            font-size: map-get($map: $comun, $key:size );
             margin-right: 30px;
         }
     }
