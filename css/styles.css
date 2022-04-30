@@ -116,7 +116,7 @@
   grid-column: 1/4;
 }
 
-.works, .secpri__titsup {
+.works, main .secpri__titsup {
   background-color: rgb(255, 238, 0);
   font-family: "Volkhov", serif;
   font-size: 35px;
@@ -159,14 +159,13 @@
     padding-top: 20px;
   }
 
+  .trabajos {
+    grid-template-columns: auto;
+  }
   .trabajos div img {
     width: 200px;
     height: 200px;
     border-radius: 20px;
-  }
-
-  .trabajos {
-    grid-template-columns: auto;
   }
   .trabajos p {
     font-size: 17px;
@@ -186,7 +185,7 @@
     border-radius: 20px;
   }
 
-  .works, .secpri__titsup {
+  .works, main .secpri__titsup {
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0;
@@ -237,7 +236,7 @@
 }
 
 /*MEDIAQUERIES*/
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 299px) {
   .quienessomos {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -246,9 +245,33 @@
     font-size: 15px;
   }
 
-  .secpri {
-    grid-template-rows: 60px auto auto 60px;
+  .secpri__titsecquie {
+    font-size: 15px;
+    margin: 17px 10px;
+    grid-row: 4;
   }
+
+  .footq {
+    grid-template-rows: 20px 30px;
+    grid-template-columns: auto;
+    padding-top: 0;
+  }
+
+  .quien__img {
+    width: 80%;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 427px) {
+  .quienessomos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .quienessomos p {
+    font-size: 15px;
+  }
+
   .secpri__titsecquie {
     font-size: 15px;
     margin: 17px 10px;
@@ -265,7 +288,7 @@
     width: 150px;
   }
 }
-@media only screen and (min-width: 386px) and (max-width: 576px) {
+@media only screen and (min-width: 428px) and (max-width: 576px) {
   .quienessomos {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -274,9 +297,6 @@
     font-size: 15px;
   }
 
-  .secpri {
-    grid-template-rows: 60px auto auto 60px;
-  }
   .secpri__titsecquie {
     font-size: 15px;
     margin: 17px 10px;
@@ -384,7 +404,7 @@
     display: none;
   }
 
-  .works, .secpri__titsup {
+  .works, main .secpri__titsup {
     font-size: 15px;
   }
 
@@ -461,18 +481,17 @@ html {
 main {
   background-color: rgb(163, 180, 175);
 }
-
-.secpri {
+main .secpri {
   display: grid;
   grid-template-columns: auto repeat(8, 1fr) auto;
   grid-template-rows: 60px auto 60px 100px;
   padding-bottom: 100px;
   padding-top: 40px;
 }
-.secpri__titsup {
+main .secpri__titsup {
   grid-column: 1/11;
 }
-.secpri__titsec {
+main .secpri__titsec {
   grid-row: 3;
   grid-column: 1/11;
   background-color: rgb(255, 238, 0);
@@ -484,7 +503,7 @@ main {
   text-align: right;
   align-self: center;
 }
-.secpri__titinf {
+main .secpri__titinf {
   grid-row: 4;
   grid-column: 1/11;
   font-size: 30px;
@@ -494,21 +513,19 @@ main {
   margin-top: 50px;
   padding-top: 50px;
 }
-
-#carouselExampleSlidesOnly {
+main .secpri__titinf .ahorra:hover {
+  font-size: 45px;
+  color: red;
+}
+main .secpri #carouselExampleSlidesOnly {
   display: inline-block;
   grid-column: 3/9;
   width: auto;
 }
-#carouselExampleSlidesOnly img {
+main .secpri #carouselExampleSlidesOnly img {
   display: inline-block;
   width: 600px;
   height: auto;
-}
-
-.ahorra:hover {
-  font-size: 45px;
-  color: red;
 }
 
 /*fabricantes*/
@@ -591,8 +608,8 @@ main {
 
 /*MEDIAQUERIES*/
 @media screen and (max-width: 576px) {
-  main {
-    padding-top: 0;
+  .nav-link {
+    font-size: 13px;
   }
 
   .navbar-brand {
@@ -600,35 +617,33 @@ main {
     font-family: "Volkhov", serif;
   }
 
-  .nav-link {
-    font-size: 13px;
+  main {
+    padding-top: 0;
   }
-
-  .secpri {
+  main .secpri {
     padding-top: 20px;
     grid-template-rows: 60px auto 60px auto;
     height: auto;
     padding-bottom: 40px;
   }
-  .secpri__titsup {
+  main .secpri__titsup {
     font-size: 15px;
     margin: 0 10px;
   }
-  .secpri__imghome {
+  main .secpri__imghome {
     margin: 0;
   }
-  .secpri__titsec {
+  main .secpri__titsec {
     font-size: 15px;
     margin: 17px 10px 0px 10px;
   }
-  .secpri__titinf {
+  main .secpri__titinf {
     font-size: 15px;
     padding-top: 0px;
     margin: 40px 10px 0 10px;
     text-align: center;
   }
-
-  .ahorra:hover {
+  main .secpri__titinf .ahorra:hover {
     font-size: 17px;
     color: red;
   }
@@ -698,42 +713,40 @@ main {
 }
 @media only screen and (min-width: 577px) and (max-width: 900px) {
   /*INDEX*/
-  main {
-    padding-top: 0;
-  }
-
   .navbar-brand {
     font-size: 20px !important;
     font-family: "Volkhov", serif;
   }
 
-  .secpri {
+  main {
+    padding-top: 0;
+  }
+  main .secpri {
     padding-top: 20px;
     grid-template-rows: 60px auto 60px auto;
     height: auto;
     padding-bottom: 40px;
   }
-  .secpri__titsup {
+  main .secpri__titsup {
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0;
   }
-  .secpri__imghome {
+  main .secpri__imghome {
     margin: 0;
   }
-  .secpri__titsec {
+  main .secpri__titsec {
     font-size: 20px;
     margin-top: 17px;
     margin-bottom: 0px;
   }
-  .secpri__titinf {
+  main .secpri__titinf {
     font-size: 15px;
     padding-top: 15px;
     margin-top: 0;
     margin-bottom: 0;
   }
-
-  .ahorra:hover {
+  main .secpri__titinf .ahorra:hover {
     font-size: 17px;
     color: red;
   }

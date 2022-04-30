@@ -36,7 +36,7 @@ display: inline-block;
 
 
 /*MEDIAQUERIES*/
-@media screen and (max-width: 576px){
+@media only screen and (max-width: 299px){
 .quienessomos {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -45,13 +45,38 @@ display: inline-block;
     }
 }
 
-.secpri {
-    grid-template-rows: 60px auto auto 60px;
-    &__titsecquie {
+.secpri__titsecquie {
+    font-size: 15px;
+    margin: 17px 10px;
+    grid-row: 4;
+}
+
+
+.footq {
+    grid-template-rows: 20px 30px;
+    grid-template-columns: auto;
+    padding-top: 0;
+}
+
+.quien__img{
+    width: 80%;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+}
+@media screen and (min-width: 300px) and (max-width: 427px){
+.quienessomos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    p {
         font-size: 15px;
-        margin: 17px 10px;
-        grid-row: 4;
     }
+}
+
+.secpri__titsecquie {
+    font-size: 15px;
+    margin: 17px 10px;
+    grid-row: 4;
 }
 
 .footq {
@@ -65,7 +90,7 @@ display: inline-block;
 }
 }
 
-@media only screen and (min-width: 386px) and (max-width: 576px){
+@media only screen and (min-width: 428px) and (max-width: 576px){
 .quienessomos {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -74,13 +99,10 @@ display: inline-block;
     }
 }
 
-.secpri {
-    grid-template-rows: 60px auto auto 60px;
-    &__titsecquie {
-        font-size: 15px;
-        margin: 17px 10px;
-        grid-row: 4;
-    }
+.secpri__titsecquie {
+    font-size: 15px;
+    margin: 17px 10px;
+    grid-row: 4;
 }
 
 .footq {
