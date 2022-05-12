@@ -1,0 +1,103 @@
+/*CONTANOS TU PROYECTO*/
+.contanos{
+    padding-top: 17px;
+    p{
+        font-size: 20px;
+        margin-left: 40px;
+        font-family: $tipo2;
+        padding-bottom: 20px;
+        font-weight: 800;
+    }
+}
+
+.formulario{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.mb-3 textarea{
+    font-size: 13px;
+}
+#apellido{
+    margin-left: 5px;
+}
+.form-control{
+    margin-bottom: 20px;
+}
+.form-select{
+    margin-bottom: 20px;
+}
+.imgcelu{
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+}
+#imgcelu{
+    position: absolute;
+    width: 335px;
+}
+.botones{
+    display: flex;
+    justify-content: end;
+    input{
+    font-size: 15px;
+    margin-left: 20px;
+    opacity: 0.5;
+    }
+    input:hover{
+    opacity: 1;
+    border-radius: 10px;
+    font-size: 18px;
+    }   
+}
+
+/*MEDIAQUERIES*/
+@media screen and (max-width: 576px){
+.container-fluid{
+    padding-top: 10px;
+}
+
+#imgcelu{
+display: none;
+}
+.works {
+    font-size: 15px;
+}
+
+.contanos p{
+    font-size: 13px;
+    margin-right: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.secpri__titsectra {
+    font-size: 15px;
+}
+}
+
+@media only screen and (min-width: 577px) and (max-width: 900px){
+#imgcelu{
+    width: 150px;
+    padding-top: 0px;
+}
+.container-fluid{
+    padding-top: 15px;
+}
+.contanos p{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-right: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+}
+
+
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+#imgcelu{
+    width: 250px;
+    padding-top: 30px;
+}
+}

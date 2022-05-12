@@ -1,0 +1,14 @@
+$colorfondo: rgb(163, 180, 175);
+$colorfondo-tit: rgb(255, 238, 0);
+$letratitulo: rgb(51, 51, 95);
+
+$comun: (
+    color: red,
+    size: 2rem,
+);
+
+@mixin border ($estilo, $radio, $colors){
+    border-style: $estilo;
+    border-radius: $radio;
+    border-color: $colors;
+}
